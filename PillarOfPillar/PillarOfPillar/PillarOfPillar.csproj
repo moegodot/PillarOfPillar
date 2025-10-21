@@ -1,27 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <IsPackable>true</IsPackable>
-        <PackAsTool>false</PackAsTool>
-        
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
 
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <IsRoslynComponent>true</IsRoslynComponent>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <IsPackable>true</IsPackable>
+        <PackAsTool>false</PackAsTool>
 
         <RootNamespace>PillarOfPillar</RootNamespace>
         <PackageId>PillarOfPillar</PackageId>
+        <Description>Foundational library for SourceGenerator.</Description>
+        
+        <Authors>MoeGodot</Authors>
+        <Copyright>Copyright © 2025 MoeGodot</Copyright>
+        
+        <RepositoryUrl>https://github.com/moegodot/PillarOfPillar</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/moegodot/PillarOfPillar</PackageProjectUrl>
+        
+        <Version>1.0.5</Version>
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     </PropertyGroup>
-
+    
     <ItemGroup>
-        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0"/>
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.0"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" PrivateAssets="all"/>
     </ItemGroup>
     
 </Project>
