@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillarOfPillar", "PillarOfPillar\PillarOfPillar.csproj", "{DF962EFD-B24C-4E7F-8BE6-181950CFDCFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillarOfPillar.Sample", "PillarOfPillar.Sample\PillarOfPillar.Sample.csproj", "{795A01EC-BEE3-47E1-8ED2-AA3A98B57E17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PillarOfPillar.Tests", "PillarOfPillar.Tests\PillarOfPillar.Tests.csproj", "{34F0A625-5AB8-4A14-B13C-ABEC2BD2439F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF962EFD-B24C-4E7F-8BE6-181950CFDCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF962EFD-B24C-4E7F-8BE6-181950CFDCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF962EFD-B24C-4E7F-8BE6-181950CFDCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF962EFD-B24C-4E7F-8BE6-181950CFDCFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795A01EC-BEE3-47E1-8ED2-AA3A98B57E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795A01EC-BEE3-47E1-8ED2-AA3A98B57E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795A01EC-BEE3-47E1-8ED2-AA3A98B57E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795A01EC-BEE3-47E1-8ED2-AA3A98B57E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F0A625-5AB8-4A14-B13C-ABEC2BD2439F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F0A625-5AB8-4A14-B13C-ABEC2BD2439F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F0A625-5AB8-4A14-B13C-ABEC2BD2439F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F0A625-5AB8-4A14-B13C-ABEC2BD2439F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
