@@ -71,7 +71,7 @@ public class CSharpBuilder
     /// Enter class of symbol,you needless to exit it.
     /// You should call <see cref="EnterNamespace"/> first.
     /// </summary>
-    public void EnterNamedType(ISymbol? targetSymbol)
+    public void EnterNamedType(ISymbol? targetSymbol,string strAtRight = "")
     {
         List<INamedTypeSymbol> symbols = [];
         targetSymbol = targetSymbol?.ContainingType;
@@ -81,10 +81,15 @@ public class CSharpBuilder
             targetSymbol = targetSymbol.ContainingType;
         }
 
+        var index = 0;
         symbols.Reverse();
         foreach (var symbol in symbols)
         {
-            PutHeadAndEndWithIndent($"partial class {symbol.Name}\n{{","}");
+            index++;
+            PutHeadAndEndWithIndent(
+                index == symbols.Count
+                    ? $"partial class {symbol.Name} {strAtRight}\n{{"
+                    : $"partial class {symbol.Name}\n{{", "}");
         }
     }
 
